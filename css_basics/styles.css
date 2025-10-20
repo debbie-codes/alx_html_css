@@ -1,0 +1,46 @@
+/*----This is the body of the website*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*This is the main section---*/
+main{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/*----This is the article section---*/
+article{
+    flex: 2;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/*----This is the aside section----*/
+aside{
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #e9e9e9;
+}
+
+/*Simple styling of the header and footer*/
+header, footer{
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+/*Ensuring that the layout is neat and responsive*/
+@media (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+
+}
