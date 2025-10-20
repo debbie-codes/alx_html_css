@@ -37,6 +37,90 @@ header, footer{
     text-align: center;
 }
 
+body.work_on_smartphone{
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body.work_on_smartphone main{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    gap: 1rem;
+}
+
+body.works_on_smartphone article,
+body.works_on_smartphone aside {
+  flex: none;         
+  width: 100%;        
+  box-sizing: border-box;
+  overflow-y: auto;   
+  max-height: none;   
+  padding: 1rem;
+}
+
+body.works_on_smartphone header,
+body.works_on_smartphone footer {
+  padding: 0.75rem 1rem;
+}
+
+/* Navigation: switch inline list to stacked/tappable links */
+body.works_on_smartphone nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+body.works_on_smartphone nav a {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* Make images and videos responsive */
+body.works_on_smartphone img,
+body.works_on_smartphone video,
+body.works_on_smartphone iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tables: enable horizontal scrolling rather than overflow the viewport */
+body.works_on_smartphone table {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; 
+}
+
+/* Form inputs: make tappable on mobile */
+body.works_on_smartphone input,
+body.works_on_smartphone textarea,
+body.works_on_smartphone button,
+body.works_on_smartphone select {
+  font-size: 1rem;
+  min-height: 2.4rem;
+}
+
+/* Optional: subtle spacing for small screens */
+@media (max-width: 480px) {
+  body.works_on_smartphone {
+    font-size: 16px; 
+  }
+
+  body.works_on_smartphone header h1 {
+    font-size: 1.25rem;
+  }
+}
+
+
 /*Ensuring that the layout is neat and responsive*/
 @media (max-width: 768px){
     main{
