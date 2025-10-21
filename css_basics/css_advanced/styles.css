@@ -294,4 +294,73 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
+/*========The Membership Section=========*/
+.membership-section {
+  background-color: #071629; 
+  color: white;
+  text-align: center;
+  padding: 80px 40px;
+  height: 70vh;
+}
+
+.membership-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #c271ff;
+}
+
+.membership-container {
+  display: flex;
+  justify-content: center;  /* centers all blocks horizontally */
+  align-items: flex-start;  /* aligns them at the top */
+  flex-wrap: wrap;          /* ensures responsiveness */
+  gap: 120px;                /* spacing between each block */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.membership-block {
+  background-color: transparent; /* clean, no background */
+  text-align: center;
+  width: 200px;
+}
+
+.membership-block img {
+  width: 60px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 20px; 
+  width: 60px;
+  height: 60px; 
+}
+
+.membership-block h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+
+ .register-button button {
+  background: linear-gradient(90deg, #a855f7, #d946ef);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-button button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.4);
+}
+
+
+
+
 
