@@ -202,4 +202,96 @@ nav ul li a:hover {
   text-transform: capitalize;
 }
 
+/*===========The Popular Videos Section=========*/
+.videos-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.videos-section h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #071629;
+}
+
+.videos-section h2 .high{
+    color:  #c271ff;
+}
+
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.video-block {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.video-block img {
+  width: 100%;
+  display: block;
+}
+
+.video-block h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 15px;
+}
+
+.video-block p {
+  padding: 15px;
+  color: #555;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.author-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+}
+
+.author-block img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.author-block h4{
+  padding: 10px 15px;
+   color:  #c271ff;
+}
+
+.rating-block {
+  display: flex;
+   gap: 10px;  
+  align-items: center;
+  gap: 10px;  
+  padding: 10px 15px;
+}
+
+.stars {
+  display: flex;              /* ensures stars stay on one line */
+  align-items: center;
+  gap: 5px;                   /* small spacing between each star */
+}
+
+.stars img {
+  width: 20px;                /* adjust size as needed */
+  height: auto;
+}
+
+/* make the text look cleaner */
+.rating-block p {
+  margin: 0;
+  color: #ddd;
+  font-weight: 500;
+}
+
 
