@@ -401,6 +401,60 @@ nav ul li a:hover {
 }
 
 
+/*===========The Footer Section============*/
+footer {
+  background-color: #071629; /* dark navy background */
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap;              
+  padding-bottom: 20px;
+}
+
+/* Footer logo */
+.footer-logo {
+  width: 190px;
+  height: auto;
+}
+
+/* Social media links */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;  /* space between icons */
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links a img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Footer copyright */
+.copyright p {
+  text-align: center;
+  margin-top: 40px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+
 
 
 
