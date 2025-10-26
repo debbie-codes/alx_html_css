@@ -1,0 +1,208 @@
+/*=========The General Reset====== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+
+/*-------The Header Section------*/
+header {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #FF6565;
+}
+
+
+/* ======The Hero Section====== */
+.hero{
+    position: relative;
+  background: 
+  radial-gradient(circle at center, rgba(7, 22, 41, 0.9), rgba(0, 0, 0, 0.8), rgba(41, 48, 61, 0.9)),
+    url("images/background.png") center/cover no-repeat;
+  color: white; /* text stands out on dark background */
+  text-align: center;
+  padding: 100px 20px;
+  height: 100vh;
+}
+
+/* make sure the image tag doesn’t interfere with the background */
+.hero > img {
+  display: none;
+}
+
+.hero-content{
+    margin-top: 170px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1{
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.hero-content p{
+  font-size: 16px;
+  margin-bottom: 30px; 
+  font-weight: bold;
+  text-align: center; 
+}
+
+.hero-content button{
+  background-color: #FF6565;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
+.hero-content button:hover{
+     background-color: #071629;
+}
+
+.hero-content p .parag{
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  word-spacing: 60px;
+  text-align: center;
+}
+
+/* =======The What We do Section==== */
+
+.what-we-do{
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    
+}
+.feature-item {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.feature-item img {
+    font-size: 20px;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 60px;
+  display: block;
+  margin: 0 auto 20px; 
+  width: 60px;
+  height: 60px; 
+}
+
+
+/* Stats Section */
+.stats {
+    position: relative;
+  background: 
+  radial-gradient(circle at center, rgba(7, 22, 41, 0.9), rgba(0, 0, 0, 0.8), rgba(41, 48, 61, 0.9)),
+    url("images/background1.png") center/cover no-repeat;
+  color: white; /* text stands out on dark background */
+  text-align: center;
+  padding: 80px 60px;
+  height: 90vh;
+}
+
+.stats > img{
+  display: none;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+.stat-item {
+  background: #ff6b6b;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: scale(1.05);
+  background: #ff5252;
+}
+
+.stat-item p {
+  font-size: 14px;
+  margin-top: 5px;
+}
